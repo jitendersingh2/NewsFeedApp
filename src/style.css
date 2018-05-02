@@ -1,0 +1,1246 @@
+@font-face {
+    font-family: "Roboto-Black";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./resources/gartner_fonts/Roboto/TTF/Roboto-Black.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "Roboto-BlackItalic";
+    font-weight: normal;
+    font-style: italic;
+    src: url("./resources/gartner_fonts/Roboto/TTF/Roboto-BlackItalic.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "Roboto-Bold";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./resources/gartner_fonts/Roboto/TTF/Roboto-Bold.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "Roboto-BoldItalic";
+    font-weight: normal;
+    font-style: italic;
+    src: url("./resources/gartner_fonts/Roboto/TTF/Roboto-BoldItalic.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "RobotoCondensed-Bold";
+    font-weight: normal;
+    font-style: italic;
+    src: url("./resources/gartner_fonts/Roboto/TTF/RobotoCondensed-Bold.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "RobotoCondensed-BoldItalic";
+    font-weight: normal;
+    font-style: italic;
+    src: url("./resources/gartner_fonts/Roboto/TTF/RobotoCondensed-BoldItalic.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "RobotoCondensed-Italic";
+    font-weight: normal;
+    font-style: italic;
+    src: url("./resources/gartner_fonts/Roboto/TTF/RobotoCondensed-Italic.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "RobotoCondensed-Light";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./resources/gartner_fonts/Roboto/TTF/RobotoCondensed-Light.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "RobotoCondensed-LightItalic";
+    font-weight: normal;
+    font-style: italic;
+    src: url("./resources/gartner_fonts/Roboto/TTF/RobotoCondensed-LightItalic.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "RobotoCondensed-Regular";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./resources/gartner_fonts/Roboto/TTF/RobotoCondensed-Regular.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "Roboto-Italic";
+    font-weight: normal;
+    font-style: italic;
+    src: url("./resources/gartner_fonts/Roboto/TTF/Roboto-Italic.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "Roboto-Light";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./resources/gartner_fonts/Roboto/TTF/Roboto-Light.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "Roboto-LightItalic";
+    font-weight: normal;
+    font-style: italic;
+    src: url("./resources/gartner_fonts/Roboto/TTF/Roboto-LightItalic.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "Roboto-Medium";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./resources/gartner_fonts/Roboto/TTF/Roboto-Medium.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "Roboto-MediumItalic";
+    font-weight: normal;
+    font-style: italic;
+    src: url("./resources/gartner_fonts/Roboto/TTF/Roboto-MediumItalic.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "Roboto-Regular";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./resources/gartner_fonts/Roboto/TTF/Roboto-Regular.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "Roboto-Thin";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./resources/gartner_fonts/Roboto/TTF/Roboto-Thin.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "Roboto-ThinItalic";
+    font-weight: normal;
+    font-style: italic;
+    src: url("./resources/gartner_fonts/Roboto/TTF/Roboto-ThinItalic.ttf") format("truetype"); 
+  }
+  
+  body{overflow-x: hidden;}
+  
+  #app > .swal2-container {
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 99;
+  }
+  
+  #app > .swal2-container > .swal2-popup {
+      height: -webkit-fill-available;
+      width: -webkit-fill-available;
+      padding: 0;
+  }
+  
+  #app > .swal2-container > .swal2-popup > .swal2-content {
+      font-size: 2.125em;
+  }
+  
+  #header{
+    background-color: #3a3a3a;
+    height: 50px;
+    color: #ddd;
+    font-family: RobotoCondensed-Light;
+    padding: 12px 20px;
+    width:100%;
+    position: fixed;
+    z-index:100;
+  }
+  
+  #header #gartnerLogo{
+    height: 28px;
+    float: right;
+  }
+  
+  #header .gartnerLogoDiv{
+    margin-left: -2px;
+  }
+  
+  #header .header-title{
+    font-family: RobotoCondensed-Light;
+    font-size: 22px;
+  }
+  
+  #header .proxy{
+      border-radius: 2px;
+      background-color: red;
+      padding: 0px 5px 0px 5px;
+      position: relative;
+      top: 0px;
+      white-space: nowrap;
+  }
+  
+  #header .header-user{
+      text-align: right;
+      font-size: 17px;
+      white-space: nowrap;
+  }
+  
+  .header-contact-icon{
+   text-align: left;
+    padding-left: 10px;
+    color: #ccd45b;
+    font-size: 30px;
+    position: relative;
+    top: -4px;
+  }
+  
+  #header .icon-contact{
+    color: #98a028;
+    font-size: 28px;
+  }
+  
+  #header .icon-person{
+      font-size: xx-large;
+      color: #d4e157;
+      vertical-align: sub;
+  }
+  
+  #header .contactDiv{
+      margin-top: -1px;
+  }
+  
+  #header .exportAllButton, #header .exportFilteredButton{
+      background-color: transparent;
+      cursor: pointer;
+      color: #46b8da;
+      border-color: #46b8da;
+      font-weight: bold;
+      margin: 6px -13px;
+      padding: 2px 19px;
+      font-size: 12px
+  }
+  
+  #header .exportAllButton {
+      margin-right: 20px;
+  }
+  
+  #exportButtonForm{
+      display: inline-flex;
+      width: min-content;	
+  }
+  
+  #proxyErrorMessage{
+      padding-top: 100px;
+  }
+  
+  #proxyErrorMessage p{
+      font-family: RobotoCondensed-Light;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  #filterSection {
+    z-index: 99;
+    position: fixed;
+    width:100%;
+    top:50px;
+    background-color: white;
+    min-height: 50px;
+  }
+  
+  #filterSection .btn-filter {
+    background-color: white;
+    text-transform: uppercase;
+    color: #0286c2;
+    font-family: Roboto-Bold;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    padding-top: 0;
+    line-height: 1.14;
+  }
+  
+  .filter-form .filter-div {
+    padding-top: 15px;
+  }
+  
+  #totalsTable {
+    font-family: RobotoCondensed-Regular;
+    float: right;
+  }
+  
+  #totalsTable td {
+    min-width: 80px;
+    text-align: right;
+    padding:0 10px 0 0px;
+    vertical-align:bottom;
+    /* font-weight:normal;
+    text-align: center; */
+  
+  }
+  #totalsTable tbody td {
+    font-weight: normal;
+    text-align: center;
+  }
+  
+  #totalsTable td.bordered {
+    border-left: #ececec;
+    border-width: 1px;
+    border-left-style: solid;
+  }
+  
+  #tab .nav-tabs{
+      background-color: #0c5278;
+      height: 60px;
+      font-family: Roboto-Bold;
+      padding: 12px 20px;
+      text-transform: uppercase;
+      padding-left: 32%;
+      position: fixed;
+      width:100%;
+      top:100px;
+      border-bottom-width: 0px;
+  }
+  
+  /* ------------------------- */
+  .tabEdit .nav-tabs {
+      background-color: white;
+      height: 60px;
+      font-family: Roboto-Bold;
+      padding: 12px 20px;
+      text-transform: uppercase;
+      padding-left: 30%;
+      position: relative;
+      width: 100%;
+      top: 6px;
+      border-bottom-width: 0px;
+      
+  } 
+  
+  /* ------------------------- */
+  
+  #tab .nav > li > a {
+      padding: 10px 30px;
+  }
+  
+  #tab .nav-tabs > li {
+      float: left;
+      margin-bottom: -1px;
+  }
+  
+  #tab .nav-tabs > li.active > a,
+  #tab .nav-tabs > li.active > a:focus,
+  #tab .nav-tabs > li.active > a:hover,
+  #tab .nav-tabs > li > a,
+  #tab .nav-tabs > li > a:focus,
+  #tab .nav-tabs > li > a:hover{
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      outline: none;
+  }
+  
+  #tab .nav-tabs > li > a:hover{
+    color: #ccc;
+    background-color: inherit;
+      border-bottom-color: #ccc;
+      border-bottom-width: 8px;
+  }
+  
+  #tab .nav-tabs > li.active > a {
+      color: white;
+      cursor: default;
+      background-color: inherit;
+      border-bottom-color: white;
+      border-bottom-width: 8px;
+  }
+  
+  /* for Edit navs---------------------- */
+  
+  .tabEdit .nav-tabs>li>a:hover {
+      color: rgb(0, 0, 0);
+      background-color: inherit;
+      border-bottom-color: black;
+      border-bottom-width: 8px;
+  }
+  
+  .tabEdit .nav-tabs>li.active>a {
+      color: black;
+      cursor: default;
+      background-color: inherit;
+      border-bottom-color: black;
+      border-bottom-width: 8px;
+  }
+  
+  /* -------------------------------------------- */
+  
+  #tab .tab-content {
+    /*top: 160px;*/
+    position: absolute;
+    width: 100%;
+  }
+  
+  .alertOverlay{
+    position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.6);
+  }
+  
+  .alertModal{
+      position: absolute;
+      top: 292px;
+      left: 560px;
+      right: 560px;
+      bottom: 292px;
+      outline: none;
+      padding: 2px;
+  }
+  
+  .alertModal .alertBox{
+      background-color: #fff;
+      border: 2px white solid;
+  }
+  
+  .alertModal .alertTitle{
+      padding: 5px 10px;
+      font-size: 16px;
+      line-height: 20px;
+      color: #fff;
+      font-family: RobotoCondensed-Bold;
+      text-transform: capitalize;
+  }
+  
+  .alertModal .icon-close{
+    cursor: pointer;
+  }
+  
+  
+  .alertModal .alertMessage{
+      padding: 10px;
+      line-height: 20px;
+      color: #444;
+      overflow: auto;
+      font-family: RobotoCondensed-Regular;
+  }
+  
+  .alertModal .alertButtons{
+      text-align: right;
+      margin: 0;
+  }
+  
+  .alertModal .btn-ok{
+      text-align: center;
+      background: #737373;
+      padding: 0 15px;
+      font-family: RobotoCondensed-Bold;
+      text-transform: uppercase;
+      color: #fff!important;
+      display: inline-block;
+      border-radius: 4px;
+      margin: 5px 0;
+      white-space: nowrap;
+  }
+  
+  .btn-more {
+    background-color: #2A9FD8;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    padding: 14px 0px 14px 0px;
+  }
+  
+  .btn-less {
+    background-color: grey;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    padding: 14px 0px 14px 0px;
+  }
+  
+  #footer{
+      height: 40px;
+      width: 100%;
+      border-top: 1px solid #e5e5e5;
+      z-index: 9999;
+      background-color: white;
+      position: fixed;
+      bottom: 0;
+      color: #b4b4b4;
+      text-align: center;
+      font-family: RobotoCondensed-Regular;
+      font-size: 12px;
+  }
+  
+  #footer .footer-text{
+    margin-top: 10px;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .ReactModal__Body--open{
+    overflow-y: hidden;
+  }
+  
+  .loader {
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #3498db;
+      border-right: 16px solid #3498db;
+      width: 80px;
+      height: 80px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto;
+      z-index: 100;
+  }
+
+  .order-loader {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+  }
+  
+  .red{
+    color: red;
+  }
+  
+  .orange{
+    color: orange !important;
+  }
+  
+  .bc-red{
+    background-color: red;
+  }
+  
+  .grey{
+    color: #B8B8B8 !important;
+  }
+  
+  .green{
+      color: #c0ca33;
+  }
+  
+  .bc-green{
+    background-color: #c0ca33;
+  }
+  
+  /* React table custom styles */
+  #renewalsTable, #renewalSummaryTable, #contractingProcessTable {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  #renewalSummaryTable table thead td, #renewalSummaryTable table tbody td, #renewalSummaryTable table thead th, #renewalSummaryTable table tbody th{
+      text-align: center;
+  }
+  
+  #renewalSummaryTable table thead td, #renewalSummaryTable table thead th{
+      background-color: #00315D;
+      color: white;
+      font-family: RobotoCondensed-Regular;
+      padding: 12px 20px;
+  }
+  
+  #contractingProcessTable table thead td, #contractingProcessTable table tbody td, #contractingProcessTable table thead th, #contractingProcessTable table tbody th{
+      text-align: center;
+  }
+  
+  #contractingProcessTable table thead td, #contractingProcessTable table thead th{
+      background-color: #00315D;
+      color: white;
+      font-family: RobotoCondensed-Regular;
+      padding: 12px 20px;
+  }
+  
+  #renewalSummaryTable table thead, #contractingProcess table thead{
+      min-width: 100%;
+      position: relative;
+  }
+  
+  #renewalSummaryTable table tbody, #contractingProcess table tbody{
+      z-index: -1;
+      width: inherit;
+      position: relative;
+  }
+  
+  .ReactTable {
+      border: 0px;
+  }
+  
+  .ReactTable .rt-thead {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #00315D;
+    color: white;
+    font-family: RobotoCondensed-Regular;
+    padding: 12px 0px;
+    line-height: 1.36;
+  }
+  
+  /* .ReactTable .rt-tr {
+    align-items: center;
+    justify-content: center;     
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  } */
+  
+  .ReactTable .rt-tbody {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    z-index: -1;
+    margin-bottom: 40px;
+    background-color: #FFF;
+  }
+  
+  .ReactTable .rt-tbody .rt-tr {
+    height: 50px;
+    font-family: Roboto-Medium;
+    font-size: 14px;
+    line-height: 1.36;
+    color: #3a3a3a;
+  } 
+  
+  
+  .ReactTable .rt-tbody .rt-tr .rt-td {
+    text-align: center;
+  }
+  
+  .ReactTable .rt-tbody .rt-tr .rt-td .alert-flare {
+      font-weight: bold;
+      font-size: 10px;
+      border: 1px solid black;
+      padding: 4px;
+      margin: 5px;
+    }
+  
+    
+  /* CSS for icons used in the react-table */
+  .ReactTable .rt-tbody .rt-tr .rt-td .icon-description {
+      font-size: 24px;
+      fill: #0286C2;
+      color: #0286C2;
+  }
+  
+  .ReactTable .rt-tbody .rt-tr .rt-td .icon-check_circle, .ReactTable .rt-tbody .rt-tr .rt-td .icon-speaker_notes {
+    font-size: 24px;
+    fill: #AFB42B;
+    color: #AFB42B;
+  }
+  
+  .rt-th.react-table-header:focus {
+      outline: none;
+  }
+  
+  .ReactTable .rt-tbody .rt-tr:hover {
+      border: 1px solid #98ca36db;
+  }
+  
+  div.rt-td:hover span.icon-mode_edit{
+      visibility: visible;
+  }
+  .ReactTable .rt-tbody .rt-tr:hover .icon-mode_edit{
+      visibility: visible ! important;
+  }
+  
+  
+  .ReactTable .rt-tbody .rt-tr .rt-td.gridPencilIcon{
+  padding-top:2px; 
+  }
+  .ReactTable .rt-tbody .rt-tr .icon-mode_edit {
+      visibility: hidden;
+      background-color: #AFB42B;
+      border: none;
+      color: white;
+      padding: 12px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      /* margin-left: 30px; */
+      
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 -3px 0px 0 rgba(0, 0, 0, 0.1)
+  }
+  
+  .ReactTable .rt-tbody .rt-tr .rt-td .icon-warning {
+      font-size: 24px;
+      fill: #E53935;
+      color: #E53935;
+    }
+  
+  /* Override native react-table ugly box-shadow */
+  .ReactTable .rt-thead .rt-th.-sort-asc, .ReactTable .rt-thead .rt-td.-sort-asc {
+      box-shadow: inset 0 3px 0 0 rgba(0,0,0,0);
+  }
+  
+  .ReactTable .rt-thead .rt-th.-sort-desc, .ReactTable .rt-thead .rt-td.-sort-desc {
+      box-shadow: inset 0 3px 0 0 rgba(0,0,0,0);
+  }
+  
+  .filterTag{
+    display: inline-flex;
+    margin-top: 10px;
+    padding-left: 40px;
+  }
+  
+  .filterTag .clearAllFilterTag{
+      padding-left: 25px;
+      font-family: Roboto-Bold;
+      color: steelblue;
+      cursor: pointer;
+      text-transform: uppercase;
+      margin-top: 5px;
+  }
+  
+  .filterTag p{
+      margin-top: 0 !important;
+      margin-right: 8px;
+  }
+  
+  .filterTagPill{
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #e1e1e1;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .filterTagPill .icon-close{
+    color: steelblue;
+    padding-left: 15px;
+    cursor: pointer;
+    top: 2px;
+    position: relative;
+    font-size: 14px;
+  }
+  
+  .filterTagValue{
+    font-family: Roboto-Bold;
+    text-transform: initial;
+  }
+  
+  #filterSection .input-group-addon {
+    padding: 0;
+    width: 165px;
+    border: none;
+  }
+  
+  #filterSection .input-group-addon .dropdown .btn-dropdown {
+    background-color: #eee;
+    color: #0286C2;
+  }
+  
+  #filterSection .input-group-addon.clipped .dropdown .btn-dropdown {
+    border-right:none;
+  }
+  
+  .dropdown .icon-expand_more{
+      font-size: 20px;
+      color: #148ec6;
+  }
+  
+  .dropdown .btn-dropdown {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      height: 34px;
+      padding: 7px 12px 5px 12px;
+      width: 100%;
+      text-align: start;
+      color: #747474;
+      font-family: RobotoCondensed-Regular;
+  }
+  
+  .dropdown .dropdown-menu{
+      width: 100%;
+      margin-top: 10px;
+      font-family: RobotoCondensed-Regular;
+      min-width: 0;
+  }
+  
+  .dropdown .dropdown-menu > li > a{
+      padding: 3px 12px;
+  }
+  
+  
+  
+  
+  
+  /* ---------------------------------------------------------------------- */
+  /* Copied from TM app styles. Repurpose as needed, then delete from below */
+  /* ---------------------------------------------------------------------- */
+  .clearFix{
+    border-bottom-width: thin;
+    border-bottom-color: lightgrey;
+    border-bottom-style: solid;
+    padding-bottom: 17px;
+  }
+  
+  .paddingRow{
+      height: 150px !important;
+  }
+  
+  .pointerHover:hover{
+      cursor: pointer;
+  }
+  
+  .absolutePosition{
+    position: absolute;
+  }
+  
+  .errorMessage{
+      color: red;
+      font-family: RobotoCondensed-Regular;
+  }
+  
+  .input-text{
+    height: 34px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      padding-left: 10px;
+      color: #000;
+      width: 100%;
+  }
+  
+  .checkbox{
+      margin-bottom: 80%;
+      position: relative;
+      -webkit-transition: color 0.25s linear;
+      transition: color 0.25s linear;
+      font-size: 14px;
+      line-height: 1.5;
+  }
+  
+  .checkbox .icons, .radio .icons{
+    color: #cdcdcd;
+  }
+  
+  .accountRow .checkbox{
+      margin-bottom: 100%;
+  }
+  
+  .typeaheadInput{
+      display: inherit !important;
+      position: relative;
+      font-family: RobotoCondensed-Regular;
+  }
+  
+  .typeaheadInput > ul {
+      list-style: none;
+      padding-left: 0;
+      position: absolute;
+      background-color: #ccc;
+      z-index: 9999;
+      border-radius: 4px;
+      width: 100%;
+  }
+  
+  .typeaheadInput > ul > li {
+      list-style-type: none;
+      padding: 5px 0 5px 5px;
+  }
+  
+  .typeaheadInput li:nth-child(even) {
+      background-color: #F9F9F9;
+  }
+  
+  .typeaheadInput > ul > li.typeAheadHighlighted {
+      color: #4C7793;
+      font-weight: bold;
+  }
+  
+  .datepicker, .daterangepicker {
+      position: relative;
+      font-family: RobotoCondensed-Regular;
+      cursor: pointer;
+  }
+  
+  .rootDiv .icon-insert_invitation, .datepicker .icon-insert_invitation, .daterangepickerinput .icon-insert_invitation{
+      position: absolute;
+      font-size: 24px;
+      right: 5px;
+      transform: translateY(.2em);
+      pointer-events: none;
+      color: #148ec6;
+      top: 2px;
+  }
+  
+  .rootDiv .icon-insert_invitation {
+      top: 0px;
+      right: 25px;
+  }
+  
+  .common-edit-form .icon-insert_invitation {
+      top: 25px;
+  }
+  
+  .datepicker .rdtOpen .rdtPicker, .daterangepicker .rdtOpen .rdtPicker{
+      width: 100% !important;
+  }
+  
+  .datepicker .form-control[readonly], .daterangepicker .form-control[readonly] {
+      background-color: #FFFFFF;
+  }
+  
+  .textareaInput{
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      font-family: RobotoCondensed-Regular;
+  }
+  
+  textarea{
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 6px 20px 5px 12px;
+      resize: none;
+  }
+  
+  .icon-more_vert{
+      position: absolute;
+      font-size: 24px;
+      right: 5px;
+      transform: translateY(.2em);
+      pointer-events: none;
+      color: #148ec6;
+      top: 2px;
+  }
+  
+  .__react_component_tooltip.place-left,.__react_component_tooltip.place-right,.__react_component_tooltip.place-bottom{
+      max-width: 200px;
+      text-transform: none;
+  }
+  
+  .padding-6{
+    padding-top:6px;
+  }
+  
+  .padding-20{
+    padding-top:20px;
+  }
+  
+    .modal-hr{
+      margin-left: -20px;
+      margin-right: -20px;
+      border: none;
+      border-bottom: 1px solid lightgray;
+    }
+  
+    .width100Percent{
+      width: 100%;
+    }
+  
+  /* Edit Form CSS */
+  
+  .renewal-edit-form {
+      color: #262828;    
+      font-family: RobotoCondensed-Light;
+      box-sizing: border-box;
+      padding: 20px;
+  }
+  
+  
+  .reditForm {
+      box-shadow: 0 3px 16px 0 rgba(0, 0, 0, .11);
+      margin-top: 7px;
+      padding:0px;
+      width:95%;
+      border-radius:5px;
+  }
+  
+  .reditForm hr {
+      margin:0px;
+      background: #979696;
+      height:0.3px;
+  }
+  
+  .header-nav {
+      margin: auto;
+      width: 39%;
+  }
+  
+  .renewal-edit-form .form-group .right {
+      color: lightgrey;
+      font-weight: 100;
+      font-size: 16px;
+  }
+  
+  .renewal-edit-form .padding {
+      float: right;
+  }
+  
+  .renewal-edit-form .checkbox-pr-flag {
+      padding-top: 30px;
+  }
+  
+  .renewal-edit-form .checkbox-pr-flag input {
+    margin-right: 10px;
+    transform: scale(1.5);
+  }
+  
+  /* .renewal-edit-form .checkbox label {
+      padding-top: 30px;
+  } */
+  
+  #editForm {
+      margin-top: 50px;
+        font-family: RobotoCondensed-Light;
+        color: #262828;
+        box-shadow: 0 3px 16px 0 rgba(0, 0, 0, .11);
+        box-sizing: border-box;
+        border: 1px solid lightgrey;
+  }
+  
+  #editForm .back-icon {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-right: 15px;
+  }
+  
+  #editForm .back-icon-label {
+      color: #337ab7;
+      font-size: 15px;
+      font-family: Roboto-Bold;
+  }
+  
+  #editForm td {
+      font-size: 20px;
+      font-weight: bold;
+  }
+  
+  #editForm thead, #editForm tbody, #editForm tr {
+      border-style : hidden!important;
+  }
+  
+  .renewal-edit-form select {
+      font-weight: bold;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      height: 33px;
+      padding-left: 10px;
+      color: #000;
+  }
+  
+  #editFormButton {
+      margin-top: 30px;
+      font: 16px;
+      font-family: RobotoCondensed-Light;
+      color: #262828;
+  }
+  
+  #editFormButton .btn {
+      min-width: 100px;
+      text-transform: uppercase;
+      padding: 10px 25px 5px;
+      letter-spacing: 1px;
+      color: #fff;
+  }
+  
+  #editFormButton .btn-primary {
+      background-color: #337ab7;
+      border-color: #2e6da4;
+  }
+  
+  #editFormButton .btn-save {
+      background-color: #98a028;
+  }
+  
+  #editFormButton .btn-cancel {
+      background-color: #828282;
+  }
+  
+  .maxChar{
+      width:100%;
+  }
+  
+  .fluid92{
+      width:92%;	
+  }
+  
+  
+  #artFilterSection{
+    margin-top: 28px;
+  }
+  
+  .proxyTxt{
+      padding: .25em;
+      border-radius: 5px;
+      background-color: red;
+      font-weight: bold;
+  }
+  
+  .empNm{
+    margin-left: 3px;
+    font-weight: bold;
+  }
+  
+  
+  
+  #alertsdrop {
+    margin-left: 10px;
+  }
+  
+  
+  .enclosingDiv {
+     display: flex;
+  }
+  
+  /* .tabEdit {
+      width: 600px;
+      margin-left: 20px;
+  } */
+  
+  .eform_BLink{
+      width: 121px;
+      line-height: 1.3em;
+      float:right;
+      margin-top:5%;
+  }
+  
+  .eform_BLink a{
+      text-decoration: none;
+  }
+  
+  .container-fluid.rootDiv {
+      padding: 0px;
+      margin: 0px;
+  }
+  
+  .row.formBtns {
+      margin: 0 auto;
+      width: max-content;
+  }
+  
+  #formButtons .btn{
+      margin: 0px 15px;
+  }
+
+  .moreInfoSec{
+      background-color:#135AAE ;
+      flex-grow: 1;
+      position: absolute;
+      right: 0;
+      height: 100%;
+    }
+  
+  .moreInfoSec a {
+      cursor: pointer;
+  }
+
+  .moreInfoSec a:hover {
+    color: white;
+  }
+  
+  .infoOptions{
+      font-weight: bold;
+      color: skyblue;
+      display: block;
+      font-size: 12px;
+      padding-bottom: 15px;
+    } 
+  
+  .form-check-label{
+      text-align: center;
+  }
+  
+  .helpSec {
+      background-color: #135aae;
+      width: 80%;
+      border: 1px solid #17bcd1;
+      padding: 25px;
+      margin: 20px;
+      text-align: center;
+  }
+  
+  .glyphicon-option-vertical {
+      position: absolute;
+      right: 20px;
+      pointer-events: none;
+      color: #067b9c;
+      top: 38px;
+  }
+  
+  .rootDiv input[type=date]::-webkit-inner-spin-button,
+  .rootDiv input[type=date]::-webkit-outer-spin-button,
+  .rootDiv input[type=date]::-webkit-clear-button {
+    -webkit-appearance: none;
+    
+  }
+  
+  .rootDiv input[type=date]::-webkit-calendar-picker-indicator {
+      background: none;
+      color: white;
+  }
+  
+  .rootDiv input{
+      color: black;
+  }
+  .sidebarheading{
+      color:#fff;
+      font-size: large;
+      padding-top: 10px;
+      margin-bottom: 10px;
+  }
+  
+  #trackingHistory{
+      font-size: medium;
+  }
+  
+  #trackingHistory th{
+      text-align: center;
+  }
+  
+  #trackingHistory th, #trackingHistory td{
+      padding: 10px;
+  }
+  
+  #coachingPoints li{
+      padding: 10px 0px;
+  }
+
+  #productListContainer table tbody tr:nth-child(odd) {
+      background-color: #eff0f1;
+  }
+
+  #productListContainer table tbody tr {
+    border: hidden;
+  }
+
+  #trackingHistory tbody tr:nth-child(odd) {
+    background-color: #eff0f1;
+  }
+
+  #trackingHistory tbody tr {
+    border: hidden;
+  }
+
+  .expandIcon{
+      cursor: pointer;
+  }
+
+  .rootDiv textarea {
+    min-height: 35px;
+    resize: vertical;
+    max-height: 80px;
+    overflow: hidden;
+    margin-top: 0px;
+    white-space: nowrap;
+    margin-bottom: 0px;
+    height: 35px; 
+    color: black;
+   }
+
+   .colorRed {
+       color:red!important;
+       font-weight: bold;
+   }
+
+   .hideOrders {
+       visibility: hidden;
+   }
+
+   .removeOrders {
+       display: none;
+   }
